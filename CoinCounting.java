@@ -1,3 +1,6 @@
+/* Problem: Write a program that prompts users for a decimal number, then converts that number into a dollar amount.
+Next, count the number of coins in each type that make up said dollar amount. */ 
+
 import java.util.Scanner;
 
 public class CoinCounting {
@@ -9,9 +12,9 @@ public class CoinCounting {
         double amount = input.nextDouble();
 
         // Converting the amount into cents
-        int remainingAmount = (int) (amount * 100); // PUT THE WHOLE EXPRESSION IN PARENTHESES. Otherwise, THE WHOLE CODE WILL NOT WORK.
-
-        // Converting the cents into dollar
+        int remainingAmount = (int) (amount * 100); // PUT THE WHOLE EXPRESSION IN PARENTHESES. 
+        
+        // Finding the number of dollars
         int numberOfOneDollars = remainingAmount / 100;
         remainingAmount = remainingAmount % 100;
 
@@ -31,6 +34,7 @@ public class CoinCounting {
         int numberOfPennies = remainingAmount;
 
         input.close();
+        
         System.out.println("Your total amount is: " + amount + " dollars");
         System.out.println("You have: " + numberOfOneDollars + " dollars");
         System.out.println(" " + numberOfQuarters + " quarters");
