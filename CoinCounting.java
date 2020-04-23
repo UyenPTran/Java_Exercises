@@ -23,7 +23,7 @@ public class CoinCounting {
         remainingAmount = remainingAmount % 25;
 
         // Finding the number of dimes
-        int numberOfDimes = numberOfQuarters / 10;
+        int numberOfDimes = remainingAmount / 10;
         remainingAmount = remainingAmount % 10;
 
         // Finding the number nickels
